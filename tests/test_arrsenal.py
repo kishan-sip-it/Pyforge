@@ -1,5 +1,5 @@
 import unittest
-from Datrax import arrsenal
+from datrax import arrsenal
 
 
 class TestArrsenal(unittest.TestCase):
