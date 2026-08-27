@@ -1,5 +1,6 @@
 import unittest
-from Datrax import textsmith
+from datrax import textsmith
+
 
 class TestTextsmith(unittest.TestCase):
 
@@ -20,7 +21,7 @@ class TestTextsmith(unittest.TestCase):
         self.assertEqual(textsmith.vowcount("xyz"), 0)
 
     def test_conscount(self):
-        self.assertEqual(textsmith.conscount("abcXYZ"), 5)  # b,c,X,Y,Z
+        self.assertEqual(textsmith.conscount("abcXYZ"), 5)
         self.assertEqual(textsmith.conscount("aeiou"), 0)
 
     def test_ispali(self):
@@ -66,7 +67,7 @@ class TestTextsmith(unittest.TestCase):
 
     def test_titlefy(self):
         self.assertEqual(textsmith.titlefy("hello world"), "Hello World")
-        self.assertEqual(textsmith.titlefy("HELLO WORLD"), "HELLO WORLD")  # only lowercase changes
+        self.assertEqual(textsmith.titlefy("HELLO WORLD"), "HELLO WORLD")
         self.assertEqual(textsmith.titlefy(""), "")
 
 
